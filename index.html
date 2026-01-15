@@ -8,7 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="./icon/badge_6809589.png">
+    <link
+      rel="shortcut icon"
+      href="icon/love-letter_693423.png"
+      type="image/x-icon"
+    />
     <style>
       * {
         margin: 0;
@@ -161,6 +165,10 @@
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
       }
 
+      .taps-back{
+        margin-top: 30px;
+      }
+
       .content-area {
         background: white;
         border-radius: 20px;
@@ -274,6 +282,8 @@
         object-fit: cover;
       }
 
+      /* gallerys */
+
       /* Decorative Elements */
       .heart,
       .teddy-bear {
@@ -375,7 +385,6 @@
         display: flex;
         align-items: center;
         gap: 10px;
-
       }
 
       .player button {
@@ -392,6 +401,30 @@
       .player input[type="range"] {
         flex: 1;
       }
+
+      #notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.note {
+  background: #fff7e6;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.note p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.note span {
+  font-size: 0.75rem;
+  color: #666;
+}
+
     </style>
   </head>
   <body>
@@ -425,6 +458,7 @@
         <button class="tab" data-tab="gallery"><span>🌷</span> Gallery</button>
       </div>
 
+      <!-- content'side -->
       <div class="content-area">
         <!-- Love Letter Tab -->
         <div class="tab-content active" id="love-letter">
@@ -458,23 +492,23 @@
         </div>
 
         <!-- Music Tab -->
-         <div class="tab-content" id="music">
-              <h2>Songs that remind me of you</h2>
+        <div class="tab-content" id="music">
+          <h2>Songs that remind me of you</h2>
 
-              <div id="songList"></div>
+          <div id="songList"></div>
 
-              <!-- Player -->
-              <div class="player">
-                <button id="playPause">▶️</button>
-                <input type="range" id="progress" value="0" />
-                <span id="time">0:00</span>
-              </div>
-              <audio id="audio"></audio>
+          <!-- Player -->
+          <div class="player">
+            <button id="playPause">▶️</button>
+            <input type="range" id="progress" value="0" />
+            <span id="time">0:00</span>
+          </div>
+          <audio id="audio"></audio>
         </div>
 
-<!-- sdd -->
+        <!-- sdd -->
 
-      <!--   <div class="tab-content" id="music">
+        <!--   <div class="tab-content" id="music">
           <h2>Songs that remind me of you</h2>
           <div class="song">
             <div class="song-icon">🎵</div>
@@ -506,44 +540,79 @@
           <div class="gallery">
             <div class="gallery-item">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1eaad721-3375-4d97-a5fa-cbf8a87d60b8.png"
+                src="img/1767933490107.jpeg"
                 alt="Bouquet of delicate pink roses with soft green leaves"
               />
             </div>
             <div class="gallery-item">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/73632299-5dde-4ded-805a-88a7dcb4b5e4.png"
+                src="img/1767933494812.jpeg"
                 alt="Beautiful pink tulips in a glass vase with morning dew"
               />
             </div>
             <div class="gallery-item">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e9890063-b481-46f6-97a1-9fc753211e19.png"
+                src="img/1767933497630.jpeg"
                 alt="Fluffy pink peony flowers with lush foliage"
               />
             </div>
             <div class="gallery-item">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bc3dffd-4971-4223-b7e4-3699d2b97bbe.png"
+                src="img/1767933500394.jpeg"
                 alt="Branch of pink cherry blossoms against a blue sky"
               />
             </div>
             <div class="gallery-item">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0daff3c-1751-492b-9b74-de28ac48d384.png"
+                src="img/white.jpeg"
                 alt="Cluster of light pink carnations with delicate petals"
               />
             </div>
             <div class="gallery-item">
               <img
-                src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51f3ca74-2471-403f-bb99-751536acd7d9.png"
+                src="img/1767933505912.jpeg"
                 alt="Vibrant pink azalea flowers covering a garden bush"
               />
             </div>
           </div>
         </div>
-      </div>
+
+
+        <!-- galerys tab -->
+      <div class="tab-content" id="gallerys">
+         <div class="container">
+           <div class="item">1</div>
+           <div class="item">2</div>
+           <div class="item">3</div>
+           <div class="item">4</div>
+           <div class="item">5</div>
+           <div class="item">6</div>
+           <div class="item">7</div>
+           <div class="item">8</div>
+           <div class="item">9</div>
+           <div class="item">1</div>
+           <div class="item">4</div>
+           <div class="item">7</div>
+           <div class="item">8</div>
+           <div class="item">5</div>
+           <div class="item">2</div>
+           <div class="item">3</div>
+           <div class="item">6</div>
+           <div class="item">9</div>
+        </div>
     </div>
+
+      </div>
+
+        <!-- side-back -->
+      <div class="tabs taps-back">
+        <button class="tab active" data-tab="love-letter">
+          <span>📬</span> Send a letter.</button>
+        <button class="tab" data-tab="music"><span>🎵</span>Send music.</button>
+        <button class="tab" data-tab="notes"><span>📝</span>Send  Notes</button>
+        <button class="tab" data-tab="gallery"><span>📸</span>Add photo.</button>
+        <button class="tab" data-tab="gallerys"><span>🖼️</span>View gallery</button>
+      </div>
 
     <!-- Decorative elements -->
     <div class="heart" style="top: 10%; left: 5%">❤️</div>
@@ -649,93 +718,130 @@
         addFloatingElements();
       });
 
-
       /* AGREGADO */
       const songs = [
-    {
-        title: "RUFF",
-        artist: "Kapo",
-        file: "./Music/RUFF - Kapo (Visualizer).mp3"
-    },
-    {
-        title: "Wapa",
-        artist: "Jerry Di",
-        file: "./music/Jerry Di - Wapa.mp3"
-    },
-     {
-        title: "COSITA LINDA",
-        artist: "ELENA ROSE",
-        file: "./music/ELENA ROSE, Justin Quiles - COSITA LINDA (Visualizer).mp3"
-    }
-    
-];
+        {
+          title: "RUFF",
+          artist: "Kapo",
+          file: "./Music/RUFF - Kapo (Visualizer).mp3",
+        },
+        {
+          title: "Wapa",
+          artist: "Jerry Di",
+          file: "./music/Jerry Di - Wapa.mp3",
+        },
+        {
+          title: "COSITA LINDA",
+          artist: "ELENA ROSE",
+          file: "./music/ELENA ROSE, Justin Quiles - COSITA LINDA (Visualizer).mp3",
+        },
+      ];
 
-const songList = document.getElementById("songList");
-const audio = document.getElementById("audio");
-const playPause = document.getElementById("playPause");
-const progress = document.getElementById("progress");
-const time = document.getElementById("time");
+      const songList = document.getElementById("songList");
+      const audio = document.getElementById("audio");
+      const playPause = document.getElementById("playPause");
+      const progress = document.getElementById("progress");
+      const time = document.getElementById("time");
 
-let currentSong = null;
+      let currentSong = null;
 
-// Render songs
-songs.forEach((song, index) => {
-    const div = document.createElement("div");
-    div.className = "song";
-    div.innerHTML = `
+      // Render songs
+      songs.forEach((song, index) => {
+        const div = document.createElement("div");
+        div.className = "song";
+        div.innerHTML = `
         <div class="song-icon">🎵</div>
         <div class="song-info">
             <h4>${song.title}</h4>
             <p>by ${song.artist}</p>
         </div>
     `;
-    div.addEventListener("click", () => loadSong(index));
-    songList.appendChild(div);
-});
+        div.addEventListener("click", () => loadSong(index));
+        songList.appendChild(div);
+      });
 
-function loadSong(index) {
-    currentSong = songs[index];
-    audio.src = currentSong.file;
-    audio.play();
-    playPause.textContent = "⏸️";
-}
-
-playPause.addEventListener("click", () => {
-    if (!audio.src) return;
-    if (audio.paused) {
+      function loadSong(index) {
+        currentSong = songs[index];
+        audio.src = currentSong.file;
         audio.play();
         playPause.textContent = "⏸️";
-    } else {
-        audio.pause();
-        playPause.textContent = "▶️";
-    }
-});
+      }
 
-audio.addEventListener("timeupdate", () => {
-    progress.value = (audio.currentTime / audio.duration) * 100 || 0;
-    const minutes = Math.floor(audio.currentTime / 60);
-    const seconds = Math.floor(audio.currentTime % 60).toString().padStart(2, "0");
-    time.textContent = `${minutes}:${seconds}`;
-});
+      playPause.addEventListener("click", () => {
+        if (!audio.src) return;
+        if (audio.paused) {
+          audio.play();
+          playPause.textContent = "⏸️";
+        } else {
+          audio.pause();
+          playPause.textContent = "▶️";
+        }
+      });
 
-progress.addEventListener("input", () => {
-    audio.currentTime = (progress.value / 100) * audio.duration;
-});
+      audio.addEventListener("timeupdate", () => {
+        progress.value = (audio.currentTime / audio.duration) * 100 || 0;
+        const minutes = Math.floor(audio.currentTime / 60);
+        const seconds = Math.floor(audio.currentTime % 60)
+          .toString()
+          .padStart(2, "0");
+        time.textContent = `${minutes}:${seconds}`;
+      });
 
-/* AGRREGAR MAS CANCIONES */
-/* {
+      progress.addEventListener("input", () => {
+        audio.currentTime = (progress.value / 100) * audio.duration;
+      });
+
+      /* AGRREGAR MAS CANCIONES */
+      /* {
   title: "Otra canción",
   artist: "Otro artista",
   file: "music/otra.mp3"
 } */
 
-/* agragar user music */
+      /* agragar user music */
 
-songs.push({
-  title: "Nueva canción",
-  artist: "Artista",
-  file: "music/nueva-cancion.mp3"
-});
+      songs.push({
+        title: "Nueva canción",
+        artist: "Artista",
+        file: "music/nueva-cancion.mp3",
+      });
     </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.7.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBIyvxoRIPdceKmpZay5ybJHeZM--thIK4",
+    authDomain: "taylor-heaven.firebaseapp.com",
+    projectId: "taylor-heaven",
+    storageBucket: "taylor-heaven.firebasestorage.app",
+    messagingSenderId: "487568786310",
+    appId: "1:487568786310:web:08d3e983ecb31d40ade207"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+<script type="module" src="./js/firebase.js"></script>
+<script type="module">
+  import { saveNote } from "./js/firebase.js";
+
+  saveNote("Hola Taylor 💛")
+    .then(() => console.log("Nota guardada"))
+    .catch(err => console.error(err));
+</script>
+
+
+<script type="module">
+  import { saveNote } from "./js/firebase.js";
+
+  await saveNote("Prueba real desde la web 💌");
+  console.log("Nota enviada");
+</script>
+
+
   </body>
 </html>
